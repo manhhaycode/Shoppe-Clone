@@ -1,0 +1,142 @@
+root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: rgba(0,0,0,.8);
+    --focus-indicator-color: rgba(0,0,0,0.87);
+    --focus-indicator-stroke-width: 2px;
+    --focus-indicator-spacing: ;
+    --focus-indicator-border-radius: 2px;
+}
+
+*{
+    box-sizing: inherit;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.56rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+::placeholder{
+    opacity: 0.70;
+    color: rgba(0,0,0,.8);
+}
+
+.pd-left-10{
+    padding-left: 10px;
+}
+
+.pd-10{
+    padding: 10px;
+}
+
+.pd-4{
+    padding: 4px;
+}
+.pd-7-10{
+    padding: 7px 10px;
+}
+
+.ma-r-l-5{
+    margin: 0 5px 0 5px
+}
+
+.ma-r-l-8-5{
+    margin: 0 5px 0 8px
+}
+
+.ma-r-l-10{
+    margin: 0 10px 0 10px
+}
+
+.ma-left-5{
+    margin-left: 5px;
+}
+
+.language,
+.help-center,
+.notice{
+    align-items: center;
+    display: flex;
+}
+
+.notice-icon{
+    width: 1.4rem;
+    height: 1.8rem;
+    color: #fff;
+    fill: currentColor;
+    position: relative;
+}
+
+.help-center-icon{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.language-icon{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.facebook-icon{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 10px;
+    background-size: 487.5% 293.75%;
+    background-position: 8.064516129032258% 16.129032258064516%;
+}
+
+.instagram-icon{
+    width: 1.6rem;
+    height: 1.6rem;
+    background-size: 487.5% 293.75%;
+    background-position: 58.064516129032256% 16.129032258064516%;
+}
+
+.search-icon-header{
+    width: 162px;
+    height: 50px;
+    fill: currentColor;
+}
+
+.search-icon-main{
+    width: 14px;
+    height: 14px;
+    margin: 0 8px 0 8px;
+    fill: currentColor;
+}
+
+.cart-icon-header{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    margin-left: 5px;
+    color: #fff;
+    stroke: #fff;
+    fill: currentColor;
+}
