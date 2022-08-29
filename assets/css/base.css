@@ -12,9 +12,8 @@ root{
     box-sizing: inherit;
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    color: #fff;
-    
+    margin: 0;    
+    color: inherit;
 }
 
 html{
@@ -88,7 +87,6 @@ a{
 .notice-icon{
     width: 1.4rem;
     height: 1.8rem;
-    color: #fff;
     fill: currentColor;
     position: relative;
 }
@@ -128,6 +126,7 @@ a{
     width: 14px;
     height: 14px;
     margin: 0 8px 0 8px;
+    color: inherit;
     fill: currentColor;
 }
 

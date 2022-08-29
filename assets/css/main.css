@@ -2,6 +2,7 @@
 .header{
     background: linear-gradient(-180deg,#f53d2d,#f63);
     height: auto;
+    color: #fff;
 }
 
 .header__searchbar-container,
@@ -50,6 +51,7 @@
     margin-left: 10px;
 }
 
+.header__navbar-list--right >.header__navbar-item:hover .header__navbar-item-link,
 .header__navbar-list--left >.header__navbar-item:not(:last-child):hover .header__navbar-item-link{
     color: hsla(0,0%,100%,.7);
 }
@@ -146,6 +148,11 @@
     display: flex;
     align-items: center;
     border-radius: 2px;
+}
+
+.header__searchbar--main-search:hover{
+    background: #fb6445;
+    cursor: pointer;
 }
 
 .header__searchbar--main-suggestions-container{
