@@ -43,6 +43,38 @@
     cursor: pointer;
 }
 
+.drawer-dowload-apps-container{
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+.drawer-dowload-apps{
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    background: #fff;
+    margin-top: 1rem;
+    width: 18rem;
+}
+
+.drawer-dowload-apps__qr-code-img{
+    height: 18rem;
+    width: 18rem;
+}
+
+.drawer-dowload-apps-icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1.5rem 0.5rem;
+}
+
+.drawer-dowload-apps-icons__store{
+    width: 7rem;
+    margin-top: 0.5rem;
+}
+
 .header__navbar-item--connect{
     position: relative;
     display: flex;
