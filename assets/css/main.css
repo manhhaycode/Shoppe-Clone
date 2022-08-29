@@ -39,6 +39,19 @@
     font-size: 1.3rem;
     padding: 4px;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.header__navbar-item--connect{
+    position: relative;
+    display: flex;
+    font-size: 1.3rem;
+    padding: 4px;
+    margin-left: 10px;
+}
+
+.header__navbar-list--left >.header__navbar-item:not(:last-child):hover .header__navbar-item-link{
+    color: hsla(0,0%,100%,.7);
 }
 
 .header__navbar-list--right >.header__navbar-item{
@@ -46,7 +59,10 @@
     display: flex;
     font-size: 1.3rem;
     margin-left: 10px;
+    cursor: pointer;
 }
+
+
 
 
 .header__navbar-item-link{
