@@ -54,7 +54,6 @@
     border-radius: 0.2rem;
     background: #fff;
     margin-top: 1rem;
-    width: 18rem;
 }
 
 .drawer-dowload-apps__qr-code-img{
@@ -96,9 +95,6 @@
     cursor: pointer;
 }
 
-
-
-
 .header__navbar-item-link{
     font-size: 1.3rem;
 }
@@ -106,8 +102,6 @@
 .header__navbar-social-link{
     background-image: url(../img/icon-navbar.png);
 }
-
-
 
 .header__navbar-item--separate::after{
     content: "";
@@ -122,6 +116,13 @@
 .header__navbar-item-separator{
     border-right: 1px solid hsla(0,0%,100%,.4);
     height: 1.3rem;
+}
+
+.header__navbar-item-arrow{
+    position: absolute;
+    left: -8px;
+    width: 0;
+    height: 0;
 }
 
 .header__searchbar{
