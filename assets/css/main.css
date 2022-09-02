@@ -83,8 +83,8 @@
     margin-left: 10px;
 }
 
-.header__navbar-list--right >.header__navbar-item:hover .header__navbar-item-link,
-.header__navbar-list--left >.header__navbar-item:not(:last-child):hover .header__navbar-item-link{
+.header__navbar-list--right .header__navbar-item-link:hover ,
+.header__navbar-list--left >.header__navbar-item:not(:last-child) .header__navbar-item-link:hover {
     color: hsla(0,0%,100%,.7);
 }
 

@@ -1,7 +1,8 @@
 // drawer tải ứng dụng
-const dowloadApp = document.querySelector('.header__navbar-item--dowload-app');
+const downloadApp = document.querySelector('.header__navbar-item--dowload-app');
+const dowloadAppHover = document.querySelector('.header__navbar-item-link');
 function openDrawerDownload(){
-    dowloadApp.innerHTML = `
+    downloadApp.innerHTML = `
 <a class="header__navbar-item-link " href="">Tải ứng dụng</a>
 <div class="drawer-dowload-apps-container">
     <div class="drawer-dowload-apps">
@@ -15,18 +16,14 @@ function openDrawerDownload(){
         </div>
     </div>
 </div>`;
-    var drawerContainer = document.querySelector('.drawer-dowload-apps-container');
-    if(dowloadApp.addEventListener){
-
-    }
 }
+
 
 function closeDrawerDownload(){
-    dowloadApp.innerHTML = `<a class="header__navbar-item-link " href="">Tải ứng dụng</a>`;
+    downloadApp.innerHTML = `<a class="header__navbar-item-link " href="">Tải ứng dụng</a>`;
 }
-
-dowloadApp.addEventListener('mousemove', openDrawerDownload);
-dowloadApp.addEventListener('mouseout', closeDrawerDownload);
+downloadApp.addEventListener('mouseenter', openDrawerDownload);
+downloadApp.addEventListener('mouseleave', closeDrawerDownload);
 
 
 
