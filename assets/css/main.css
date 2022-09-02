@@ -118,11 +118,18 @@
     height: 1.3rem;
 }
 
-.header__navbar-item-arrow{
+.header__navbar-item-arrow--inner{
     position: absolute;
     left: -8px;
     width: 0;
     height: 0;
+}
+
+.header__navbar-item-arrow{
+    top: 11.7px;
+    left: 34.694px;
+    color: hsla(0,0%,100%,.7);
+    position: absolute;
 }
 
 .header__searchbar{
