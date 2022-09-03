@@ -82,8 +82,8 @@
     margin-left: 10px;
 }
 
-.header__navbar-list--right .header__navbar-item-link:hover ,
-.header__navbar-list--left >.header__navbar-item:not(:last-child) .header__navbar-item-link:hover {
+.header__navbar-list--right .header__navbar-item:hover .header__navbar-item-link ,
+.header__navbar-list--left >.header__navbar-item:not(:last-child):hover .header__navbar-item-link {
     color: hsla(0,0%,100%,.7);
 }
 
@@ -118,18 +118,76 @@
     height: 1.3rem;
 }
 
+.header__navbar-item--login-or-register-container{
+    position: relative;
+    z-index: 3;
+}
+
 .header__navbar-item-arrow--inner{
-    position: absolute;
-    left: -8px;
     width: 0;
     height: 0;
+    border-bottom: 10px solid rgb(255, 255, 255); 
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent; 
 }
 
 .header__navbar-item-arrow{
-    top: 11.7px;
-    left: 34.694px;
+    top: 11.5px;
+    right: 27.3px;
     color: hsla(0,0%,100%,.7);
     position: absolute;
+}
+
+.header__navbar-item--box-login-register-img-container{
+    width: 40rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    border: 1.2px solid rgba(0,0,0,.2);
+    border-top: none;
+    height: 351px;
+    position: absolute;
+    top: 19px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(0,0,0,.8);
+    font-size: 1.4rem;
+}
+
+.header__navbar-item--box-login-register-img{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__navbar-item--box-login-register-img-content{
+    margin-top: 20px;
+}
+
+.header__navbar-item--box-login-register-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+}
+
+.header__navbar-item--box-login-register-main-content{
+    background-color: #f5f5f5;
+    border: none;
+    padding: 1px 6px;
+    font-size: inherit;
+    font-family: inherit;
+    width: 50%;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.header__navbar-item--box-login-register-main-content:hover{
+    color: #ee4d2d;
+    background-color: #e8e8e8;
 }
 
 .header__searchbar{
