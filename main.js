@@ -26,4 +26,19 @@ downloadApp.addEventListener('mouseenter', openDrawerDownload);
 downloadApp.addEventListener('mouseleave', closeDrawerDownload);
 
 
+// Box thông báo 
+const notificationBox = document.querySelector('.header__navbar-item-link.notice');
+const notificationBoxClose = document.getElementById('header__navbar-item-notice');
+const notificationBoxString  = '<div class="header__navbar-item--login-or-register-container"> <div class="header__navbar-item-arrow"> <div class="header__navbar-item-arrow--inner"></div> </div> <div class="header__navbar-item--box-login-register"> <div class="header__navbar-item--box-login-register-img-container"> <div class="header__navbar-item--box-login-register-img"> <img src="./assets/img/login-register-img.png" alt="login-register-img" style="width: 100px; height: 100px;"> <p class="header__navbar-item--box-login-register-img-content">Đăng nhập để xem Thông báo</p> </div> <div class="header__navbar-item--box-login-register-main"> <button class="header__navbar-item--box-login-register-main-content"> <div>Đăng ký</div> </button> <button class="header__navbar-item--box-login-register-main-content">Đăng nhập</button> </div> </div> </div></div>'
+function openNotificationBox(){
+    if(document.querySelector('.header__navbar-item--login-or-register-container')!= null){
+        document.querySelector('.header__navbar-item--login-or-register-container').remove();
+    }
+    notificationBox.insertAdjacentHTML("afterend", notificationBoxString);
+}
+function closeNotificationBox(){
+    document.querySelector('.header__navbar-item--login-or-register-container').remove();
+}
 
+notificationBox.addEventListener('mouseenter', openNotificationBox);
+notificationBoxClose.addEventListener('mouseleave', closeNotificationBox);
